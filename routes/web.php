@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IlhamController;
+use App\Http\Controllers\QasthalaniController;
 use App\Http\Controllers\UtamaController;
 use Carbon\Traits\Test;
 
@@ -25,13 +27,13 @@ Route::get('/asal', function () {
 });
 
 
-use App\Http\Controllers\IlhamController;
+
 
 Route::get("/ilham/satu", [IlhamController::class, "satu"]);
 Route::get("/ilham/dua", [IlhamController::class, "dua"]);
 Route::get("/ilham/tiga", [IlhamController::class, "tiga"]);
 
-use App\Http\Controllers\QasthalaniController;
+
 
 Route::get("/qasthalani/one", [QasthalaniController::class, "one"]);
 Route::get("/qasthalani/two", [QasthalaniController::class, "two"]);
